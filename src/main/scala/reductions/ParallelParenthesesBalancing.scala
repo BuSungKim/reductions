@@ -39,7 +39,11 @@ object ParallelParenthesesBalancingRunner {
 object ParallelParenthesesBalancing {
 
   /** Returns `true` iff the parentheses in the input `chars` are balanced.
+<<<<<<< HEAD
     */
+=======
+   */
+>>>>>>> 9959ec817f9e76adb3228dacf739fde409ce4d8a
   def balance(chars: Array[Char]): Boolean = {
 
     def inner(chars: Array[Char], count: Int): Boolean = {
@@ -56,7 +60,11 @@ object ParallelParenthesesBalancing {
   }
 
   /** Returns `true` iff the parentheses in the input `chars` are balanced.
+<<<<<<< HEAD
     */
+=======
+   */
+>>>>>>> 9959ec817f9e76adb3228dacf739fde409ce4d8a
   def parBalance(chars: Array[Char], threshold: Int): Boolean = {
 
     def traverse(idx: Int, until: Int, count: Int, minDepth: Int): (Int, Int) = {
@@ -69,7 +77,11 @@ object ParallelParenthesesBalancing {
     }
 
     def reduce(from: Int, until: Int): (Int, Int) = {
+<<<<<<< HEAD
       if (until - from <= threshold) traverse(from, until, 0, 0)
+=======
+      if (until - from < threshold) traverse(from, until, 0, 0)
+>>>>>>> 9959ec817f9e76adb3228dacf739fde409ce4d8a
       else {
         val mid = (from + until) / 2
         val (left, right) = parallel(reduce(from, mid), reduce(mid, until))
@@ -83,4 +95,8 @@ object ParallelParenthesesBalancing {
   // For those who want more:
   // Prove that your reduction operator is associative!
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 9959ec817f9e76adb3228dacf739fde409ce4d8a

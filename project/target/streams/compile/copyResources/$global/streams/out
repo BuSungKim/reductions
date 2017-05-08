@@ -1,2 +1,6 @@
 [0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+<<<<<<< HEAD
 [0m[[0mdebug[0m] [0m	(/Users/lineplus/IdeaProjects/reductions/project/target/scala-2.10/sbt-0.13/resource_managed/main/sbt/sbt.builds,/Users/lineplus/IdeaProjects/reductions/project/target/scala-2.10/sbt-0.13/classes/sbt/sbt.builds)[0m
+=======
+[0m[[0mdebug[0m] [0m	(/Users/kimbusung/Programming/scala/reductions/project/target/scala-2.10/sbt-0.13/resource_managed/main/sbt/sbt.builds,/Users/kimbusung/Programming/scala/reductions/project/target/scala-2.10/sbt-0.13/classes/sbt/sbt.builds)[0m
+>>>>>>> 9959ec817f9e76adb3228dacf739fde409ce4d8a

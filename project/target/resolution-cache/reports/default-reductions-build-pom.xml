@@ -9,7 +9,11 @@
 		extra-sbtVersion="0.13"
 		conf="pom"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+<<<<<<< HEAD
 		date="20170508095309"/>
+=======
+		date="20170506153836"/>
+>>>>>>> 9959ec817f9e76adb3228dacf739fde409ce4d8a
 	<dependencies>
 	</dependencies>
 </ivy-report>
