@@ -88,10 +88,11 @@ object LineOfSight {
     */
   def downsweepSequential(input: Array[Float], output: Array[Float],
                           startingAngle: Float, from: Int, until: Int): Unit = {
-    output(from) = if (from > 0) input(from) / from else startingAngle
-    var i = from + 1
+    var i = from
+    var previousMax = startingAngle
     while (i < until) {
-      output(i) = max(output(i-1), input(i) / i)
+      output(i) = max(previousMax, input(i) / i)
+      previousMax = output(i)
       i += 1
     }
   }
@@ -112,7 +113,7 @@ object LineOfSight {
   /** Compute the line-of-sight in parallel. */
   def parLineOfSight(input: Array[Float], output: Array[Float],
                      threshold: Int): Unit = {
-    val t = upsweep(input, 0, input.length, threshold)
+    val t = upsweep(input, 1, input.length, threshold)
     downsweep(input, output, 0f, t)
   }
 }
